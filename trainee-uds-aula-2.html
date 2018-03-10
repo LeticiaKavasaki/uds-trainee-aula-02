@@ -36,33 +36,33 @@
     //     case 6:
     //       alert("Sabado");
     //   }
-      function converter(decimal){
-        console.log (decimal);
-        switch (decimal) {
-          case 1:
-            return "I";
-          case 2:
-            return "II";
-          case 3:
-            return "III";
-          case 4:
-            return "IV";
-          case 5:
-            return "V";
-          case 6:
-            return "VI";
-          case 7:
-            return "VII";
-          case 8:
-            return "VIII";
-          case 9:
-            return "IX";
-          case 10:
-            return "X";
-          default:
-            return "Erro - 9396";
-        }
-      }
+      // function converter(decimal){
+      //   console.log (decimal);
+      //   switch (decimal) {
+      //     case 1:
+      //       return "I";
+      //     case 2:
+      //       return "II";
+      //     case 3:
+      //       return "III";
+      //     case 4:
+      //       return "IV";
+      //     case 5:
+      //       return "V";
+      //     case 6:
+      //       return "VI";
+      //     case 7:
+      //       return "VII";
+      //     case 8:
+      //       return "VIII";
+      //     case 9:
+      //       return "IX";
+      //     case 10:
+      //       return "X";
+      //     default:
+      //       return "Erro - 9396";
+      //   }
+      // }
       //   var decimal = prompt("Digite um numero de 1 a 10");
       //   decimal = parseInt(decimal);
       //   var resultado = converter(decimal);
@@ -77,10 +77,26 @@
       //   alert(convertendofor);
       //   j++;
       // }
-      for(var i =10; i >= 1; i--){
-          var convertendofor = converter(i);
-          alert(convertendofor);
-      }
+      // for(var i =10; i >= 1; i--){
+      //     var convertendofor = converter(i);
+      //     alert(convertendofor);
+      // }
+      var dadosPessoais = [];
+      dadosPessoais.push("Leticia Kavasaki");
+      dadosPessoais.push("08006007070");
+      var endereco = [];
+      endereco.push("89815-000");
+      endereco.push("R. Calopsita");
+      endereco.push("29");
+      endereco.push("casa");
+      endereco.push("jd. carlos");
+      endereco.push("Aquidaban");
+      endereco.push("Paraná");
+      dadosPessoais.push(endereco);
+      console.log(dadosPessoais);
+      dadosPessoais [0] = "Leticia Cristina Kavasaki de Oliveira";
+      dadosPessoais.splice(1,1);
+      console.log(dadosPessoais);
     </script>
   </body>
 </html>
