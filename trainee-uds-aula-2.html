@@ -100,26 +100,35 @@
       // var MostrarMinhasInformações = function (){
       //   alert("Seu nome é" + this.Nome + " " + this.SobreNome + " " );
       // }
-      var nome = "Leticia Cristina "
-      var sobreNome = "Kavasaki de Oliveira"
-      var endereco = {
-        Cep: "89815-000",
-        Rua: "Rua Calopsita",
-        NumeroCasa: "29",
-        Complemento: "casa",
-        Bairro: "Jd. Carlos",
-        Cidade: "Aquidaban",
-        Estado: "Paraná",
-      }
+      // var nome = "Leticia Cristina "
+      // var sobreNome = "Kavasaki de Oliveira"
+      // var endereco = {
+      //   Cep: "89815-000",
+      //   Rua: "Rua Calopsita",
+      //   NumeroCasa: "29",
+      //   Complemento: "casa",
+      //   Bairro: "Jd. Carlos",
+      //   Cidade: "Aquidaban",
+      //   Estado: "Paraná",
+      // }
       var dadosPessoais = {
-        Nome: nome,
-        SobreNome: sobreNome,
-        Endereco: endereco,
-        MostrarMinhasInformações: function (){
-          alert("Seu nome é" + this.Nome + " " + this.SobreNome + "\nSeu enderco é " + this.Endereco.Cep + ", " + this.Endereco.Rua + ", " +
-          this.Endereco.NumeroCasa + ", " + this.Endereco.Complemento + ", " + this.Endereco.Bairro + ", " + this.Endereco.Cidade + "-" + this.Endereco.Estado);
+        Nome: "Leticia Cristina ",
+        SobreNome: "Kavasaki de Oliveira",
+        Endereco: {
+          Cep: "89815-000",
+          Rua: "Rua Calopsita",
+          NumeroCasa: "29",
+          Complemento: "casa",
+          Bairro: "Jd. Carlos",
+          Cidade: "Aquidaban",
+          Estado: "Paraná",
+        },
+        MostrarMinhasInformações : function (){
+          alert("Seu nome é" + this.Nome + " " + this.SobreNome + "\nSeu enderco é " + this.Endereco.Cep + " " + this.Endereco.Rua + " " +
+          this.Endereco.NumeroCasa + " " + this.Endereco.Complemento + " " + this.Endereco.Bairro + " " + this.Endereco.Cidade + " " + this.Endereco.Estado );
         },
       }
+
       dadosPessoais.MostrarMinhasInformações();
     </script>
   </body>
