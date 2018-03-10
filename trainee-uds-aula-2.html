@@ -81,22 +81,46 @@
       //     var convertendofor = converter(i);
       //     alert(convertendofor);
       // }
-      var dadosPessoais = [];
-      dadosPessoais.push("Leticia Kavasaki");
-      dadosPessoais.push("08006007070");
-      var endereco = [];
-      endereco.push("89815-000");
-      endereco.push("R. Calopsita");
-      endereco.push("29");
-      endereco.push("casa");
-      endereco.push("jd. carlos");
-      endereco.push("Aquidaban");
-      endereco.push("Paraná");
-      dadosPessoais.push(endereco);
-      console.log(dadosPessoais);
-      dadosPessoais [0] = "Leticia Cristina Kavasaki de Oliveira";
-      dadosPessoais.splice(1,1);
-      console.log(dadosPessoais);
+      // var dadosPessoais = [];
+      // dadosPessoais.push("Leticia Kavasaki");
+      // dadosPessoais.push("08006007070");
+      // var endereco = [];
+      // endereco.push("89815-000");
+      // endereco.push("R. Calopsita");
+      // endereco.push("29");
+      // endereco.push("casa");
+      // endereco.push("jd. carlos");
+      // endereco.push("Aquidaban");
+      // endereco.push("Paraná");
+      // dadosPessoais.push(endereco);
+      // console.log(dadosPessoais);
+      // dadosPessoais [0] = "Leticia Cristina Kavasaki de Oliveira";
+      // dadosPessoais.splice(1,1);
+      // console.log(dadosPessoais);
+      // var MostrarMinhasInformações = function (){
+      //   alert("Seu nome é" + this.Nome + " " + this.SobreNome + " " );
+      // }
+      var nome = "Leticia Cristina "
+      var sobreNome = "Kavasaki de Oliveira"
+      var endereco = {
+        Cep: "89815-000",
+        Rua: "Rua Calopsita",
+        NumeroCasa: "29",
+        Complemento: "casa",
+        Bairro: "Jd. Carlos",
+        Cidade: "Aquidaban",
+        Estado: "Paraná",
+      }
+      var dadosPessoais = {
+        Nome: nome,
+        SobreNome: sobreNome,
+        Endereco: endereco,
+        MostrarMinhasInformações: function (){
+          alert("Seu nome é" + this.Nome + " " + this.SobreNome + "\nSeu enderco é " + this.Endereco.Cep + ", " + this.Endereco.Rua + ", " +
+          this.Endereco.NumeroCasa + ", " + this.Endereco.Complemento + ", " + this.Endereco.Bairro + ", " + this.Endereco.Cidade + "-" + this.Endereco.Estado);
+        },
+      }
+      dadosPessoais.MostrarMinhasInformações();
     </script>
   </body>
 </html>
